@@ -5,7 +5,8 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        backgroundColor: '#f5f5f5',
+        backgroundColor: theme.palette.secondary.main,
+        minHeight: '100vh',
         flexGrow: 1,
     },
 }));
@@ -18,7 +19,7 @@ const Layout = ({ children }) => {
         <div>
             <AppBar position="static">
                 <Toolbar>
-
+                    
                 </Toolbar>
             </AppBar>
             <div className={classes.root}>
