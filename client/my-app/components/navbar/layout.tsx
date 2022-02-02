@@ -7,7 +7,6 @@ const useStyles = makeStyles(theme => ({
     root: {
         backgroundColor: theme.palette.secondary.main,
         minHeight: '100vh',
-        flexGrow: 1,
     },
 }));
 
