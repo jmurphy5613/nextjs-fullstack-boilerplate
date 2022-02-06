@@ -18,23 +18,24 @@ export default function Home() {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="md">
-      <Typography variant="h2" component="h1" className={classes.title}>
-        The online test platform you need for the
-        {
-          <Typed 
-            strings={[
-              'SAT',
-              'ACT',
-              'LSAT',
-              'AP Tests',
-            ]}
-            typeSpeed={40}
-            backSpeed={30}
-            loop
-          />
-        }
-      </Typography>
-    </Container>
+    <>
+      <Container maxWidth="md">
+        <Typography variant="h2" component="h1" className={classes.title}>
+          The online test platform you need for the
+          {
+            <Typed 
+              strings={[
+                'SAT',
+                'ACT',
+                'LSAT',
+              ]}
+              typeSpeed={40}
+              backSpeed={30}
+              loop
+            />
+          }
+        </Typography>
+      </Container>
+    </>
   )
 }
