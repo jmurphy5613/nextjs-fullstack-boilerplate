@@ -7,8 +7,15 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontWeight: '500',
     color: '#ffffff',
-    fontSize: '2.5rem',
+    fontSize: '4.5rem',
+    padding: '30% 0 0 0',
+    fontFamily: '"Inter", sans-serif',
+    fontWeight: '600',
   },
+  innerTitle: {
+    color: theme.palette.secondary.contrastText,
+    fontWeight: '600',
+  }
 
 }));
 
@@ -21,19 +28,21 @@ export default function Home() {
     <>
       <Container maxWidth="md">
         <Typography variant="h2" component="h1" className={classes.title}>
-          The online test platform you need for the
-          {
-            <Typed 
-              strings={[
-                'SAT',
-                'ACT',
-                'LSAT',
-              ]}
-              typeSpeed={40}
-              backSpeed={30}
-              loop
-            />
-          }
+          The online<br/> <span className={classes.innerTitle}> test platform <br/> </span> you need for <br/> {`the `}  
+            <span className={classes.innerTitle}>
+              
+              <Typed 
+                strings={[
+                  'SAT',
+                  'ACT',
+                  'LSAT',
+                ]}
+                typeSpeed={90}
+                backSpeed={30}
+                loop
+              />
+            
+            </span>
         </Typography>
       </Container>
     </>
