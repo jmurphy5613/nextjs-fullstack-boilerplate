@@ -8,12 +8,14 @@ const theme = createTheme({
         },
         secondary: {
           main: '#081c3c',
-          contrastText: '#3399ff'
+          contrastText: '#3399ff',
+          light: '#B2BAC2'
         },
       },
       typography: {
         fontFamily: {
           primary: '"Inter", sans-serif',
+          secondary: 'IBM Plex Sans, sans-serif'
         }
       }    
 })
