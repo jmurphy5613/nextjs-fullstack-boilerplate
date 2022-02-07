@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: '500',
     color: '#ffffff',
     fontSize: '4.5rem',
-    padding: '30% 0 0 0',
+    padding: '25% 0 0 0',
     fontFamily: '"Inter", sans-serif',
     fontWeight: '600',
   },
