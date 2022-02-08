@@ -15,7 +15,7 @@ const theme = createTheme({
     typography: {
       fontFamily: {
         primary: '"Inter", sans-serif',
-        secondary: 'IBM Plex Sans, sans-serif'
+        secondary: 'IBM Plex Sans, sans-serif', 
       }
     }    
 })
