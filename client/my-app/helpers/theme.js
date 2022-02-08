@@ -12,12 +12,12 @@ const theme = createTheme({
           light: '#B2BAC2'
         },
       },
-      typography: {
-        fontFamily: {
-          primary: '"Inter", sans-serif',
-          secondary: 'IBM Plex Sans, sans-serif'
-        }
-      }    
+    typography: {
+      fontFamily: {
+        primary: '"Inter", sans-serif',
+        secondary: 'IBM Plex Sans, sans-serif'
+      }
+    }    
 })
 
 export default theme;

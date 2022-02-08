@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
 import Button from '@material-ui/core/Button';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -22,6 +23,14 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.light,
     fontSize: '1.2rem',
     margin: '1rem 0 1rem 0'
+  },
+  getStartedButton: {
+    backgroundColor: '#007FFF',
+    color: '#ffffff',
+    fontWeight: 'bold',
+    '&:hover' : {
+      backgroundColor: '#3038ff'
+    }
   }
 
 }));
@@ -54,7 +63,7 @@ export default function Home() {
         <Typography variant="h5" className={classes.subTitle}>
           This platform allows you to take released versions <br/> of standarized tests online with an interactive test <br/> client to mimick the real testing enviroment.
         </Typography>
-        <Button variant="contained">Get Started</Button>
+        <Button variant="contained" className={classes.getStartedButton} endIcon={ <ArrowForwardIosIcon /> }>Get Started</Button>
       </Container>
     </>
   )
