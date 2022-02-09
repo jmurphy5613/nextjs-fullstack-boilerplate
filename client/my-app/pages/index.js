@@ -4,8 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
 import Button from '@material-ui/core/Button';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import Navbar from '../components/navbar';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
+  root: {
+    backgroundColor: theme.palette.secondary.main,
+    minHeight: '100vh',
+  },  
   title: {
     fontWeight: '500',
     color: '#ffffff',
@@ -29,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#ffffff',
     fontWeight: 'bold',
     '&:hover' : {
-      backgroundColor: '#3038ff'
+      backgroundColor: '#3038ff',
     }
   }
 
@@ -41,7 +46,8 @@ export default function Home() {
   const classes = useStyles();
 
   return (
-    <>
+    <div className={classes.root}>
+      <Navbar />
       <Container maxWidth="md">
         <Typography variant="h2" component="h1" className={classes.title}>
           The online<br/> <span className={classes.innerTitle}> test platform <br/> </span> you need for <br/> {`the `}  
@@ -65,6 +71,6 @@ export default function Home() {
         </Typography>
         <Button variant="contained" className={classes.getStartedButton} endIcon={ <ArrowForwardIosIcon /> }>Get Started</Button>
       </Container>
-    </>
+    </div>
   )
 }
